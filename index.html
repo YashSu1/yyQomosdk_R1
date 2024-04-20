@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Press Events</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const socket = io();
-
-            // Listen for button press events from the server
-            socket.on('buttonPress', (buttonValue) => {
-                const buttonEvents = document.getElementById('buttonEvents');
-                buttonEvents.innerHTML += `<p>Button ${buttonValue} pressed</p>`;
-            });
-        });
-    </script>
+    <title>Button Press</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
 </head>
 <body>
-    <h1>Button Press Events</h1>
-    <div id="buttonEvents"></div>
+    <h1>Press a button:</h1>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <script>
+        // Connect to the server via Socket.io
+        const socket = io();
+
+        // Function to send button press event to the server
+        function sendButtonPress(buttonValue) {
+            socket.emit('buttonPressed', buttonValue);
+        }
+
+        // Add event listeners to buttons
+        document.getElementById('button1').addEventListener('click', () => {
+            sendButtonPress('Button 1 pressed');
+        });
+
+        document.getElementById('button2').addEventListener('click', () => {
+            sendButtonPress('Button 2 pressed');
+        });
+    </script>
 </body>
 </html>

@@ -2,30 +2,39 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
-const path = require('path'); // Import the 'path' module
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Include the SDK file
+const QomoSDK = require('C:\Users\Parallel-Admin\Desktop\JSapp\Qomo with exsisting remote response\R1\yyQomosdk_R1\sdk\sdk'); // Replace with the actual path to the SDK file
+
+// Initialize the SDK
+const qomoSDK = new QomoSDK();
+
+// Handle GET request for index.html
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 
 // Socket.io connection
 io.on('connection', (socket) => {
-  console.log('A user connected');
+    console.log('A user connected');
 
-  // Listen for button press events
-  socket.on('buttonPress', (buttonValue) => {
-    console.log(`Button ${buttonValue} pressed`);
-    // Emit the button press event to all clients
-    io.emit('buttonPress', buttonValue);
-  });
+    // Handle button press event from frontend
+    socket.on('buttonPressed', (buttonValue) => {
+        console.log('Button pressed:', buttonValue);
 
-  // Handle disconnection
-  socket.on('disconnect', () => {
-    console.log('User disconnected');
-  });
+        // Here, you can call the SDK function to handle the button press
+        // For example:
+        qomoSDK.handleButtonPress(buttonValue);
+    });
+
+    // Handle disconnect event
+    socket.on('disconnect', () => {
+        console.log('User disconnected');
+    });
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3330;
 http.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
