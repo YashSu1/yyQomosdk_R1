@@ -4,7 +4,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 // Include the SDK file
-const QomoSDK = require('C:\Users\Parallel-Admin\Desktop\JSapp\Qomo with exsisting remote response\R1\yyQomosdk_R1\sdk\sdk'); // Replace with the actual path to the SDK file
+const QomoSDK = require('C:/Users/Parallel-Admin/Desktop/JSapp/Qomo with exsisting remote response/R1/yyQomosdk_R1/sdk/sdk'); // Replace with the actual path to the SDK file
 
 // Initialize the SDK
 const qomoSDK = new QomoSDK();
