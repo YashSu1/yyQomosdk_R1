@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Press Events</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const socket = io();
+
+            // Listen for button press events from the server
+            socket.on('buttonPress', (buttonValue) => {
+                const buttonEvents = document.getElementById('buttonEvents');
+                buttonEvents.innerHTML += `<p>Button ${buttonValue} pressed</p>`;
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Button Press Events</h1>
+    <div id="buttonEvents"></div>
+</body>
+</html>

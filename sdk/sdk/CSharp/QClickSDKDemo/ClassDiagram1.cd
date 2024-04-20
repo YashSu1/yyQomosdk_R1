@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AxQCLICKLib.AxQClick">
+    <Position X="3" Y="1" Width="3" />
+    <Members>
+      <Method Name="AboutBox" Hidden="true" />
+      <Method Name="AttachInterfaces" Hidden="true" />
+      <Method Name="AxQClick" Hidden="true" />
+      <Method Name="CreateSink" Hidden="true" />
+      <Method Name="DetachSink" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

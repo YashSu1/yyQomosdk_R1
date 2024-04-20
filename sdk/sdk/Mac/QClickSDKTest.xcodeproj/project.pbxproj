@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		5BE613DE12DED6C7002C2D9B /* DataOfFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613CB12DED6C7002C2D9B /* DataOfFrame.m */; };
+		5BE613DF12DED6C7002C2D9B /* DeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613CD12DED6C7002C2D9B /* DeviceController.m */; };
+		5BE613E012DED6C7002C2D9B /* frmMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613CF12DED6C7002C2D9B /* frmMain.m */; };
+		5BE613E112DED6C7002C2D9B /* QClickCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613D112DED6C7002C2D9B /* QClickCtl.m */; };
+		5BE613E212DED6C7002C2D9B /* QDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613D312DED6C7002C2D9B /* QDevice.m */; };
+		5BE613E312DED6C7002C2D9B /* QInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613D512DED6C7002C2D9B /* QInterface.m */; };
+		5BE613E412DED6C7002C2D9B /* QRF300.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613D712DED6C7002C2D9B /* QRF300.m */; };
+		5BE613E512DED6C7002C2D9B /* QRF700.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613D912DED6C7002C2D9B /* QRF700.m */; };
+		5BE613E612DED6C7002C2D9B /* QRF900.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613DB12DED6C7002C2D9B /* QRF900.m */; };
+		5BE613E712DED6C7002C2D9B /* QSerial.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE613DD12DED6C7002C2D9B /* QSerial.m */; };
+		5BE6140A12DED79D002C2D9B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE6140912DED79D002C2D9B /* IOKit.framework */; };
+		5BE6166612DEF335002C2D9B /* QARS900_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE6166512DEF335002C2D9B /* QARS900_AppDelegate.m */; };
+		5BE73B971308DA9E00EA6926 /* QRF700_900.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE73B961308DA9E00EA6926 /* QRF700_900.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32CA4F630368D1EE00C91783 /* QClickSDKTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QClickSDKTest_Prefix.pch; sourceTree = "<group>"; };
+		5BE613C912DED6C7002C2D9B /* Commdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Commdefs.h; path = Class/Commdefs.h; sourceTree = "<group>"; };
+		5BE613CA12DED6C7002C2D9B /* DataOfFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataOfFrame.h; path = Class/DataOfFrame.h; sourceTree = "<group>"; };
+		5BE613CB12DED6C7002C2D9B /* DataOfFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataOfFrame.m; path = Class/DataOfFrame.m; sourceTree = "<group>"; };
+		5BE613CC12DED6C7002C2D9B /* DeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceController.h; path = Class/DeviceController.h; sourceTree = "<group>"; };
+		5BE613CD12DED6C7002C2D9B /* DeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceController.m; path = Class/DeviceController.m; sourceTree = "<group>"; };
+		5BE613CE12DED6C7002C2D9B /* frmMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = frmMain.h; path = Class/frmMain.h; sourceTree = "<group>"; };
+		5BE613CF12DED6C7002C2D9B /* frmMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = frmMain.m; path = Class/frmMain.m; sourceTree = "<group>"; };
+		5BE613D012DED6C7002C2D9B /* QClickCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QClickCtl.h; path = Class/QClickCtl.h; sourceTree = "<group>"; };
+		5BE613D112DED6C7002C2D9B /* QClickCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QClickCtl.m; path = Class/QClickCtl.m; sourceTree = "<group>"; };
+		5BE613D212DED6C7002C2D9B /* QDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QDevice.h; path = Class/QDevice.h; sourceTree = "<group>"; };
+		5BE613D312DED6C7002C2D9B /* QDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QDevice.m; path = Class/QDevice.m; sourceTree = "<group>"; };
+		5BE613D412DED6C7002C2D9B /* QInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QInterface.h; path = Class/QInterface.h; sourceTree = "<group>"; };
+		5BE613D512DED6C7002C2D9B /* QInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QInterface.m; path = Class/QInterface.m; sourceTree = "<group>"; };
+		5BE613D612DED6C7002C2D9B /* QRF300.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRF300.h; path = Class/QRF300.h; sourceTree = "<group>"; };
+		5BE613D712DED6C7002C2D9B /* QRF300.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRF300.m; path = Class/QRF300.m; sourceTree = "<group>"; };
+		5BE613D812DED6C7002C2D9B /* QRF700.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRF700.h; path = Class/QRF700.h; sourceTree = "<group>"; };
+		5BE613D912DED6C7002C2D9B /* QRF700.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRF700.m; path = Class/QRF700.m; sourceTree = "<group>"; };
+		5BE613DA12DED6C7002C2D9B /* QRF900.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRF900.h; path = Class/QRF900.h; sourceTree = "<group>"; };
+		5BE613DB12DED6C7002C2D9B /* QRF900.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRF900.m; path = Class/QRF900.m; sourceTree = "<group>"; };
+		5BE613DC12DED6C7002C2D9B /* QSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QSerial.h; path = Class/QSerial.h; sourceTree = "<group>"; };
+		5BE613DD12DED6C7002C2D9B /* QSerial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QSerial.m; path = Class/QSerial.m; sourceTree = "<group>"; };
+		5BE6140912DED79D002C2D9B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		5BE6166412DEF335002C2D9B /* QARS900_AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QARS900_AppDelegate.h; path = Class/QARS900_AppDelegate.h; sourceTree = "<group>"; };
+		5BE6166512DEF335002C2D9B /* QARS900_AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QARS900_AppDelegate.m; path = Class/QARS900_AppDelegate.m; sourceTree = "<group>"; };
+		5BE73B951308DA9E00EA6926 /* QRF700_900.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QRF700_900.h; path = Class/QRF700_900.h; sourceTree = "<group>"; };
+		5BE73B961308DA9E00EA6926 /* QRF700_900.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QRF700_900.m; path = Class/QRF700_900.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* QClickSDKTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QClickSDKTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				5BE6140A12DED79D002C2D9B /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BE613CE12DED6C7002C2D9B /* frmMain.h */,
+				5BE613CF12DED6C7002C2D9B /* frmMain.m */,
+				5BE613D412DED6C7002C2D9B /* QInterface.h */,
+				5BE613D512DED6C7002C2D9B /* QInterface.m */,
+				5BE613D012DED6C7002C2D9B /* QClickCtl.h */,
+				5BE613D112DED6C7002C2D9B /* QClickCtl.m */,
+				5BE613CC12DED6C7002C2D9B /* DeviceController.h */,
+				5BE613CD12DED6C7002C2D9B /* DeviceController.m */,
+				5BE613C912DED6C7002C2D9B /* Commdefs.h */,
+				5BE6166412DEF335002C2D9B /* QARS900_AppDelegate.h */,
+				5BE6166512DEF335002C2D9B /* QARS900_AppDelegate.m */,
+				5BE613CA12DED6C7002C2D9B /* DataOfFrame.h */,
+				5BE613CB12DED6C7002C2D9B /* DataOfFrame.m */,
+				5BE613D212DED6C7002C2D9B /* QDevice.h */,
+				5BE613D312DED6C7002C2D9B /* QDevice.m */,
+				5BE613D612DED6C7002C2D9B /* QRF300.h */,
+				5BE613D712DED6C7002C2D9B /* QRF300.m */,
+				5BE613D812DED6C7002C2D9B /* QRF700.h */,
+				5BE613D912DED6C7002C2D9B /* QRF700.m */,
+				5BE613DA12DED6C7002C2D9B /* QRF900.h */,
+				5BE613DB12DED6C7002C2D9B /* QRF900.m */,
+				5BE73B951308DA9E00EA6926 /* QRF700_900.h */,
+				5BE73B961308DA9E00EA6926 /* QRF700_900.m */,
+				5BE613DC12DED6C7002C2D9B /* QSerial.h */,
+				5BE613DD12DED6C7002C2D9B /* QSerial.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BE6140912DED79D002C2D9B /* IOKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* QClickSDKTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* QClickSDKTest */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = QClickSDKTest;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* QClickSDKTest_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* QClickSDKTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "QClickSDKTest" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QClickSDKTest;
+			productInstallPath = "$(HOME)/Applications";
+			productName = QClickSDKTest;
+			productReference = 8D1107320486CEB800E47090 /* QClickSDKTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QClickSDKTest" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* QClickSDKTest */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* QClickSDKTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				5BE613DE12DED6C7002C2D9B /* DataOfFrame.m in Sources */,
+				5BE613DF12DED6C7002C2D9B /* DeviceController.m in Sources */,
+				5BE613E012DED6C7002C2D9B /* frmMain.m in Sources */,
+				5BE613E112DED6C7002C2D9B /* QClickCtl.m in Sources */,
+				5BE613E212DED6C7002C2D9B /* QDevice.m in Sources */,
+				5BE613E312DED6C7002C2D9B /* QInterface.m in Sources */,
+				5BE613E412DED6C7002C2D9B /* QRF300.m in Sources */,
+				5BE613E512DED6C7002C2D9B /* QRF700.m in Sources */,
+				5BE613E612DED6C7002C2D9B /* QRF900.m in Sources */,
+				5BE613E712DED6C7002C2D9B /* QSerial.m in Sources */,
+				5BE6166612DEF335002C2D9B /* QARS900_AppDelegate.m in Sources */,
+				5BE73B971308DA9E00EA6926 /* QRF700_900.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QClickSDKTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QClickSDKTest;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = QClickSDKTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = QClickSDKTest;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "QClickSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "QClickSDKTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

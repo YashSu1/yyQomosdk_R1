@@ -1,0 +1,299 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Demo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Demo.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Demo Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DEMO_DIALOG DIALOGEX 0, 0, 506, 417
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Demo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Init",IDC_STATIC,14,12,252,66
+    LTEXT           "Channel",IDC_STATIC,18,26,31,10
+    PUSHBUTTON      "Set Channel",IDC_SET_CHANNEL,144,22,50,14
+    LTEXT           "Model:",IDC_STATIC,18,46,25,8
+    LTEXT           "Version:",IDC_STATIC,144,46,26,8
+    EDITTEXT        IDC_MODEL,52,42,76,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_VERSION,190,42,71,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Init",IDC_INIT,118,61,46,14
+    GROUPBOX        "Start/Stop Session",IDC_STATIC,14,138,252,86
+    LTEXT           "Class:",IDC_STATIC,21,154,28,8
+    EDITTEXT        IDC_CLASS,51,151,76,14,ES_AUTOHSCROLL
+    LTEXT           "SessinoType:",IDC_STATIC,143,154,44,8
+    COMBOBOX        IDC_SESSION_TYPE,190,152,71,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CHANNEL_NUM,52,23,76,176,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Teacher:",IDC_STATIC,20,174,28,8
+    EDITTEXT        IDC_TEACHER,51,171,76,14,ES_AUTOHSCROLL
+    LTEXT           "Max Student:",IDC_STATIC,144,174,44,8
+    EDITTEXT        IDC_MAXSTUDENT,190,171,71,14,ES_AUTOHSCROLL
+    CONTROL         "Login Flag:",IDC_LOGIN_FLAG,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,20,191,48,8
+    PUSHBUTTON      "Start",IDC_START_SESSION,76,204,50,14
+    PUSHBUTTON      "Stop",IDC_STOP_SESSION,159,204,50,14
+    GROUPBOX        "Start/Stop Question",IDC_STATIC,14,228,252,135
+    COMBOBOX        IDC_QUESTION_NUM,39,243,35,72,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "NO.",IDC_STATIC,21,245,14,8
+    LTEXT           "Type:",IDC_STATIC,86,245,19,8
+    COMBOBOX        IDC_QUESTION_TYPE,105,243,76,51,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Option Num:",IDC_STATIC,186,245,41,8
+    COMBOBOX        IDC_OPTION_NUM,229,243,32,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Send Question Flag",IDC_SEND_QUESTION_FLAG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,262,94,10
+    EDITTEXT        IDC_QUESTION_INFO,21,301,239,36,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Start",IDC_START_QUESTION,135,340,50,14
+    PUSHBUTTON      "Stop",IDC_STOP_QUESTION,201,340,50,14
+    EDITTEXT        IDC_EDIT5,14,373,481,24,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "List1",IDC_LIST_STUDENT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,275,16,217,348
+    EDITTEXT        IDC_CORRECT_ANSWER,200,259,60,14,ES_AUTOHSCROLL
+    LTEXT           "Correct Answer:",IDC_STATIC,135,262,60,8
+    GROUPBOX        "PaperQuiz or Homework",IDC_STATIC,14,80,251,57
+    LTEXT           "ID:",IDC_STATIC,21,92,13,8
+    EDITTEXT        IDC_EDIT_ExamTitleID,36,90,40,14,ES_AUTOHSCROLL
+    LTEXT           "Title:",IDC_STATIC,104,92,25,8
+    EDITTEXT        IDC_EDIT_ExamTitle,131,90,40,14,ES_AUTOHSCROLL
+    CONTROL         "SendQuestion",IDC_CHECK_PaperSendQuestion,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,107,64,10
+    LTEXT           "Option:",IDC_STATIC,178,91,29,8
+    EDITTEXT        IDC_EDIT_PaperOption,210,90,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "SetExamTitle",IDC_BUTTON_SetTitle,112,119,50,14
+    PUSHBUTTON      "SetQuestion",IDC_BUTTON_PAPER_SETQUESTION,20,340,50,14
+    CONTROL         "AutoLoginFlag",IDC_CHECK_AutoLogin,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,191,68,10
+    PUSHBUTTON      "Send Question",IDC_BUTTON_SENDQUESTION,77,340,54,14
+    CONTROL         "",IDC_QCLICKCTRL1,
+                    "{8A4AF128-436E-4705-BF9A-7AB88619FC24}",WS_TABSTOP,13,
+                    12,67,31
+    PUSHBUTTON      "Set Keypad",IDC_BUTTON_KEYPAD,209,21,50,14
+    PUSHBUTTON      "Test",IDC_BUTTON_TEST,197,62,50,14
+    CONTROL         "RandomPaper",IDC_CHECK_RANDOM_PAPER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,104,107,68,10
+    LTEXT           "Reanswer Times:",IDC_STATIC,22,284,65,8
+    EDITTEXT        IDC_EDIT_REANSWER_TIMES,87,281,40,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Demo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Demo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Demo.EXE\0"
+            VALUE "ProductName", "Demo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 499
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 410
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DEMO_DIALOG DLGINIT
+BEGIN
+    IDC_QCLICKCTRL1, 0x376, 88, 0
+0x0022, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0032, 0x0030, 
+0x0031, 0x0030, 0x0020, 0x0051, 0x006f, 0x006d, 0x006f, 0x0020, 0x0048, 
+0x0069, 0x0074, 0x0065, 0x0056, 0x0069, 0x0073, 0x0069, 0x006f, 0x006e, 
+0x0000, 0x0001, 0x0a70, 0x0000, 0x0472, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Demo..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Demo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
